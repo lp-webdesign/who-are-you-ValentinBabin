@@ -37,15 +37,15 @@ body {
 }
 
 .pro {
-    background: -moz-linear-gradient(-45deg, #e2ab77 0%, #ddbfa4 100%);
-    background: -webkit-linear-gradient(-45deg, #e2ab77 0%, #ddbfa4 100%);
-    background: linear-gradient(-45deg, #e2ab77 0%, #ddbfa4 100%);
+    background: -moz-linear-gradient(-45deg, rgba(226, 171, 119, 0.95) 0%, rgba(221, 191, 164, 0.95) 100%), url('../images/background-pro.jpg') center center no-repeat;
+    background: -webkit-linear-gradient(-45deg, rgba(226, 171, 119, 0.95) 0%, rgba(221, 191, 164, 0.95) 100%), url('../images/background-pro.jpg') center center no-repeat;
+    background: linear-gradient(-45deg, rgba(226, 171, 119, 0.95) 0%, rgba(221, 191, 164, 0.95) 100%), url('../images/background-pro.jpg') center center no-repeat;
 }
 
 .perso {
-    background: -moz-linear-gradient(-45deg, #7dace0 0%, #a4c0dd 100%);
-    background: -webkit-linear-gradient(-45deg, #7dace0 0%, #a4c0dd 100%);
-    background: linear-gradient(135deg, #7dace0 0%, #a4c0dd 100%);
+    background: url('') center center no-repeat, -moz-linear-gradient(-45deg, #7dace0 0%, #a4c0dd 100%);
+    background: url('') center center no-repeat, -webkit-linear-gradient(-45deg, #7dace0 0%, #a4c0dd 100%);
+    background: url('') center center no-repeat, linear-gradient(135deg, #7dace0 0%, #a4c0dd 100%);
 }
 
 .intro__headlines {
@@ -86,7 +86,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     padding: 30px;
-    background-color: rgba(252, 252, 252, 0.5);
+    background-color: rgba(252, 252, 252, 0.2);
 }
 
 .intro__btn {
@@ -112,7 +112,7 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 850px) {
     .intro__btn {
         font-size: 1.5rem;
     }
