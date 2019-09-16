@@ -7,9 +7,11 @@
 /* Global
 ----------------------------------------------------------------------------- */
 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 body {
     background: #f7f7f7;
-    /* color: #1a1a1a; */
+    color: #1f1f1f;
+    font-family: 'Lato', sans-serif;
 }
 
 .pro,
@@ -18,8 +20,71 @@ body {
     height: 100vh;
 }
 
+.pro,
+.perso {
+    padding: 2rem;
+}
+
+.pro {
+    background-color: rgb(226, 171, 119)
+}
+
+.perso {
+    background-color: rgb(125, 172, 224);
+}
+
+.intro__headlines {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__title {
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.intro__description {
+    font-size: 3rem;
+    font-size: 3rem;
+    margin: 2rem 6rem;
+    text-align: center;
+    z-index: 1;
+}
+
 .intro__nav {
     position: fixed;
     bottom: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fcfcfc;
+    scroll-behavior: smooth;
+}
+
+.intro__btn {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.intro__btn:visited {
+    color: #1f1f1f;
+}
+
+.intro__btn:hover {
+    color: #3d3d3d;
+}
+
+.pro__title,
+.perso__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
 }
