@@ -71,13 +71,6 @@ body {
     z-index: 1;
 }
 
-.intro__description::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: #1f1f1f;
-}
-
 .intro__nav {
     position: fixed;
     bottom: 0;
