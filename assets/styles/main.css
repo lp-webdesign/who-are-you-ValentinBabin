@@ -81,6 +81,7 @@ body {
 
 .intro__nav {
     position: fixed;
+    /*position: sticky;*/
     bottom: 0;
     right: 0;
     display: flex;
