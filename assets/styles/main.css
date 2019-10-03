@@ -20,14 +20,35 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.pro,
-.perso,
-.intro {
-    height: 100vh;
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 700;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    line-height: auto;
+    text-align: center;
+    z-index: 1;
+    margin: 2rem 6rem 0 6rem;
 }
 
 .pro,
-.perso {
+main section {
+    height: 100vh;
+}
+
+main section {
     padding: 2rem;
     box-sizing: border-box;
     display: flex;
@@ -48,14 +69,6 @@ body {
     background: url('') center center no-repeat, linear-gradient(135deg, #7dace0 0%, #a4c0dd 100%);
 }
 
-.text {
-    font-size: 1rem;
-    line-height: auto;
-    text-align: center;
-    z-index: 1;
-    margin: 2rem 6rem 0 6rem;
-}
-
 .intro__headlines {
     height: 100vh;
     display: flex;
@@ -64,15 +77,7 @@ body {
     align-items: center;
 }
 
-.intro__title {
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    text-align: center;
-    font-weight: 700;
-    z-index: 1;
-}
-
-.intro__description {
+.intro__headlines p {
     font-size: 1rem;
     margin: 2rem 6rem 0 6rem;
     text-align: center;
@@ -96,49 +101,40 @@ body {
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
-    color: #1f1f1f;
+    color: #444444;
 }
 
 .intro__btn:visited {
-    color: #1f1f1f;
+    color: #444444;
 }
 
 .intro__btn:hover {
     color: #3d3d3d;
 }
 
-.pro__title,
-.perso__title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-}
-
 @media screen and (min-width: 850px) {
     .intro__btn {
         font-size: 1.5rem;
     }
-    .intro__title {
+    h1 {
         font-size: 8rem;
     }
-    .intro__description {
+    .intro__headlines p {
         font-size: 1.5rem;
     }
-    .text {
-        font-size: 1.25rem;
-        margin: 2rem 7rem 0 7rem;
-    }
-    .pro__title,
-    .perso__title {
+    h2 {
         font-size: 3rem;
         margin-bottom: 2rem;
         line-height: normal;
     }
+    p {
+        font-size: 1.25rem;
+        margin: 2rem 7rem 0 7rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    .text {
+    p {
         margin: 2rem 20rem 0 20rem;
     }
 }

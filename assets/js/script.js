@@ -3,6 +3,7 @@ console.log("Hello World");
 
 // Get the nav items in an array 
 var sections = document.querySelectorAll('.intro__btn');
+console.log(sections);
 
 /**
  * Function who change the color of a nav item
@@ -23,9 +24,8 @@ function haveLocation() {
         sections[1].style.color = '#444444';
         sections[2].style.color = '#000000';
     }
-
 }
 
+window.addEventListener('click', haveLocation);
+window.addEventListener('scroll', haveLocation);
 haveLocation();
-window.addEventListener('click', haveLocation, false);
-window.addEventListener('scroll', haveLocation, false);
