@@ -1,6 +1,9 @@
 /* -----------------------------------------------------------------------------
 * Global
-* ...
+* Introduction section
+* Sections
+* Navigation bar
+* Media queries
 ----------------------------------------------------------------------------- */
 
 
@@ -43,18 +46,38 @@ p {
     margin: 2rem 6rem 0 6rem;
 }
 
-.pro,
-main section {
-    height: 100vh;
-}
 
-main section {
-    padding: 2rem;
-    box-sizing: border-box;
+/* Introduction section
+----------------------------------------------------------------------------- */
+
+.intro__headlines {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    p {
+        font-size: 1rem;
+        margin: 2rem 6rem 0 6rem;
+        text-align: center;
+        z-index: 1;
+    }
+}
+
+
+/* Sections
+----------------------------------------------------------------------------- */
+
+main {
+    section {
+        height: 100vh;
+        padding: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .pro {
@@ -64,25 +87,14 @@ main section {
 }
 
 .perso {
-    background: url('') center center no-repeat, -moz-linear-gradient(-45deg, #7dace0 0%, #a4c0dd 100%);
-    background: url('') center center no-repeat, -webkit-linear-gradient(-45deg, #7dace0 0%, #a4c0dd 100%);
-    background: url('') center center no-repeat, linear-gradient(135deg, #7dace0 0%, #a4c0dd 100%);
+    background: -moz-linear-gradient(-45deg, #7dace0 0%, #a4c0dd 100%);
+    background: -webkit-linear-gradient(-45deg, #7dace0 0%, #a4c0dd 100%);
+    background: linear-gradient(135deg, #7dace0 0%, #a4c0dd 100%);
 }
 
-.intro__headlines {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.intro__headlines p {
-    font-size: 1rem;
-    margin: 2rem 6rem 0 6rem;
-    text-align: center;
-    z-index: 1;
-}
+/* Navigation bar
+----------------------------------------------------------------------------- */
 
 .intro__nav {
     position: fixed;
@@ -94,33 +106,28 @@ main section {
     align-items: flex-end;
     padding: 30px;
     background-color: rgba(252, 252, 252, 0.2);
+    a {
+        margin: 0.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #444444;
+        &:visited {
+            color: #444444;
+        }
+        &:hover {
+            color: #535353;
+        }
+    }
 }
 
-.intro__btn {
-    margin: 0.5rem;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: #444444;
-}
 
-.intro__btn:visited {
-    color: #444444;
-}
-
-.intro__btn:hover {
-    color: #3d3d3d;
-}
+/* Media Queries
+----------------------------------------------------------------------------- */
 
 @media screen and (min-width: 850px) {
-    .intro__btn {
-        font-size: 1.5rem;
-    }
     h1 {
         font-size: 8rem;
-    }
-    .intro__headlines p {
-        font-size: 1.5rem;
     }
     h2 {
         font-size: 3rem;
@@ -130,6 +137,16 @@ main section {
     p {
         font-size: 1.25rem;
         margin: 2rem 7rem 0 7rem;
+    }
+    .intro__headlines {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    .intro__nav {
+        a {
+            font-size: 1.5rem;
+        }
     }
 }
 

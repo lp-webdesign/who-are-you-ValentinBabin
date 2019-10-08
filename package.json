@@ -1,0 +1,38 @@
+{
+    "name": "onepage",
+    "version": "1.0.0",
+    "description": "This is our  first front end exercise for the LP Webdesign.  \r The goal is to understand the architecture of a project and make a Git initiation.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "webpack --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lp-webdesign/who-are-you-ValentinBabin.git"
+    },
+    "author": "Valentin Babin",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lp-webdesign/who-are-you-ValentinBabin/issues"
+    },
+    "homepage": "https://github.com/lp-webdesign/who-are-you-ValentinBabin#readme",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.6",
+        "babel-preset-es2015": "^6.24.1",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "webpack": "^4.41.0",
+        "webpack-cli": "^3.3.9"
+    },
+    "dependencies": {
+        "autoprefixer": "^9.6.4",
+        "css-loader": "^3.2.0",
+        "jquery": "^3.4.1",
+        "node-sass": "^4.12.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^8.0.0",
+        "style-loader": "^1.0.0",
+        "webpack-dev-server": "^3.8.2"
+    }
+}
