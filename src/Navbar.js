@@ -10,6 +10,10 @@ export default class Navbar {
         this.proBtn = $('a#proBtn');
         this.persoBtn = $('a#persoBtn');
         this.addEvent();
+
+        $('nav a').click(function(event) {
+            event.preventDefault();
+        });
     }
 
     /**
